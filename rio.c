@@ -11,7 +11,7 @@ ssize_t rio_writen(int fd, void *buf, size_t n)/*写入io*/
             if( errno == EINTR )    /* interrupted by sig handler return */
                 nwritten = 0;       /* read again */
             else
-                return -1;           /* errorno set by write() */
+                return -1;        /*错误返回 */
     }
     nleft -= nwritten;
     bufp += nwritten;
