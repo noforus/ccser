@@ -1,0 +1,19 @@
+<script src="./jquery-3.5.1.min.js"></script>
+
+<input type="button" value="submit" onclick="doPost('/')" />
+
+<script>
+
+    function doPost(url)
+
+    {
+      url="cgi-bin/time.arm";
+        var val1 = "hi";
+$.post(url,val1,function(data){
+alert(data);
+}
+);
+
+    }
+
+</script>
